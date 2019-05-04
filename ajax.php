@@ -23,7 +23,22 @@ if(isset($_POST["region_id"]) && !empty($_POST["region_id"])){
     }
 }
 
-echo "Errorrr";
+if(isset($_POST["data_enviada"]) && !empty($_POST["data_enviada"])){
+    //Get all state data
+    $email = filter_var($_POST["email"], FILTER_SANITIZE_EMAIL);
+    $nombre = filter_var($_POST["nombre"], FILTER_SANITIZE_STRING);
+    $motivo = filter_var($_POST["motivo"], FILTER_SANITIZE_STRING);
+    $query = $conn->query("INSERT INTO postulaciones (email, nombre, descripcion, fecha_postulacion) VALUES ('".$email ."', '".$nombre."','".$motivo ."', NOW())");
+    
+ 
+    if($query){
+        echo '<div class="alert alert-primary" role="alert">Tus datos fueron registrados correctamente</div>';
+    }else{
+        echo '<div class="alert alert-danger" role="alert">No se pudo registrar la solicitud</div>';
+    }
+}
+
+
 
 
 ?>

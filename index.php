@@ -18,7 +18,7 @@
  	?>
  	<div class="container">
 
- 		<form class="form-postula">
+ 		<form class="form-postula" id="desafio4">
 	      <div class="text-center mb-4 mt-4">
 	        <img class="mb-4" src="https://twgroup.cl/wp-content/uploads/2018/02/logo-copy.png" alt="" >
 	        <h1 class="h3 mb-3 font-weight-normal">Postula a un trabajo bakan</h1>
@@ -47,6 +47,7 @@
 			</select>	        
 	      </div>
 		  <div id="notificaciones"></div>
+		  <input type="hidden" name="data_enviada" value="enviado">
 
 	      <button class="btn btn-lg btn-primary btn-block" type="submit" id="postula" disabled>Postula</button>
 	      <p class="mt-5 mb-3 text-muted text-center">&copy; 2019</p>

@@ -2,9 +2,9 @@
 
 $dbhost = 'localhost';
 
-$dbuser = 'usuariodb';
+$dbuser = 'usuario';
 
-$dbpass = 'passworddb';
+$dbpass = 'password';
 
 $dbname='desafio4';
 
