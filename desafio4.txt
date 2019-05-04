@@ -1,0 +1,25 @@
+Desafío 4
+
+Arma las siguientes tablas de una base de datos MySQL:
+
+Tablas de la Base de Datos:
+
+    Regiones (Id, Nombre)
+    Comunas(Id, Nombre, Region_Id)
+    Postulaciones(Id, Email, Nombre, Descripcion, Fecha_Postulacion)
+
+
+Las tablas Regiones y Comunas ya deberían estár llenas con datos reales.
+Sólo la tabla Postulaciones estará limpia.
+
+La petición es:
+
+    Realiza un formulario cool, usando bootstrap, php y jQuery
+    El formulario se llama  "Postula a un trabajo bakan"
+    Al entrar deben haber dos listas: Regiones y Comunas
+    La lista Regiones mostrará todas las regiones de la tabla Regiones
+    La lista Comunas debe mostrar todas las comunas de la región previamente seleccionada
+    Sólo cuando seleccione Región: Región de Valparaiso y  Comuna "Viña del Mar", debe aparecer una etiqueta que diga "Bakan" hay práctica disponible, ingresa tus datos y postula: Nombre, Email, Por qué debo elegirte
+    Si marcas otra región y otra comuna (obviamente) debe aparecer un mensaje grande "ups...no hay nada"
+
+Recuerda usar bootstrap en el diseño, y que puedas ingresar todas las postulaciones que quieras, insertando campos en la tabla Postulaciones, como ayuda el ID es autoincremental, aunque el email sea el mismo del postulante.
